@@ -1,13 +1,13 @@
 .header{
-    background-color: black;
+    background-color: #000000;
     border-bottom: 2px solid #f44336;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 68px;
     padding: 0.5rem;
-    font-size: 1.5rem;
     align-items: center;
 }
 
@@ -25,6 +25,7 @@
     color: white;
     text-decoration: none;
     padding-inline: 0.5rem;
+    font-size: 1.125rem;
 }
 
 h2, p{
