@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from "../../components/Banner";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
@@ -8,13 +8,27 @@ import Category, {categories, filterCategory}  from '../../components/Category/I
 
 
 function Home() {
+
+    const [changeTitle, setChangeTitle] = useState('');
+
+    function handleChange(e){
+      setChangeTitle(e.target.value)
+    }
+
   return (
     <>
       <Header />
       <Banner image="imgg" />
       <Container>
 
-      {
+        <input 
+        type='text'
+        placeholder='Nome...'
+        onChange={handleChange}/>
+
+        <h2>{changeTitle}</h2>
+
+      {/* {
   categories.map((category, index) => (
     <Category category={category} key={index}>
       {filterCategory(index).map(video => (
@@ -22,7 +36,7 @@ function Home() {
       ))}
     </Category>
   ))
-}
+} */}
 
        
 
