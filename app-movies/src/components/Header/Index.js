@@ -14,9 +14,16 @@ function Header(){
                         Home
                     </Link>
 
+                
                     <Link to={"/watch"}>
-                        Asssitir
+                        Asssistir
                     </Link>
+
+                    <Link to={"/search"}>
+                        Pesquisar
+                    </Link>
+
+
                 </nav>
             </header>
         </>

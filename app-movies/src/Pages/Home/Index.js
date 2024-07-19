@@ -9,11 +9,7 @@ import Category, {categories, filterCategory}  from '../../components/Category/I
 
 function Home() {
 
-    const [changeTitle, setChangeTitle] = useState('');
 
-    function handleChange(e){
-      setChangeTitle(e.target.value)
-    }
 
   return (
     <>
@@ -21,14 +17,9 @@ function Home() {
       <Banner image="imgg" />
       <Container>
 
-        <input 
-        type='text'
-        placeholder='Nome...'
-        onChange={handleChange}/>
+    
 
-        <h2>{changeTitle}</h2>
-
-      {/* {
+      {
   categories.map((category, index) => (
     <Category category={category} key={index}>
       {filterCategory(index).map(video => (
@@ -36,7 +27,7 @@ function Home() {
       ))}
     </Category>
   ))
-} */}
+}
 
        
 
