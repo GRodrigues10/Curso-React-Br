@@ -2,5 +2,7 @@
     padding-top:68px;
     display: flex;
     flex-direction: column;
+    min-width: 600px;
+    width: 100%;
 }
 
